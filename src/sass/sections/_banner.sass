@@ -1,0 +1,353 @@
+.#{$prefix}-banner
+    background: #CBE07D
+    color: #005826
+    padding: 63px 0 473px
+    overflow: hidden
+    position: relative
+    h1
+        font-family: 'Rotonda Bold', sans-serif
+        text-transform: uppercase
+        font-size: 68px
+        margin: 25px 0 10px
+    .under
+        font-size: 28px
+        margin-top: 10px
+    .button
+        color: $green
+        background: #ffffff
+        margin-top: 15px
+    .bag
+        position: absolute
+        bottom: 0
+        left: calc(50% - 310px)
+    .curve
+        position: absolute
+        bottom: 0
+        width: 100%
+        left: 0
+    .products *
+        position: absolute
+        top: 0
+        transform: translateY(-900px)
+        animation: drop 1s linear forwards
+    .blurred-carrot
+        top: 671px
+        left: calc(50% - 140px)
+        animation-delay: .7s
+    .blurred-pear
+        top: 620px
+        animation-delay: .6s
+    .salad5
+        top: 530px
+        left: calc(50% - 170px)
+    .blurred-popato2
+        top: 620px
+        left: calc(50% - 170px)
+        animation-delay: .9s
+    .steak
+        top: 420px
+        left: calc(50% - 260px)
+        animation-delay: .8s
+    .salmon
+        top: 420px
+        left: calc(50% - 120px)
+        animation-delay: .7s
+    .blurred-eggplant
+        top: 620px
+        left: calc(50% - 120px)
+        animation-delay: .6s
+    .blurred-potato
+        top: 640px
+        left: calc(50% - 230px)
+        animation-delay: .5s
+    .blurred-orange
+        top: 680px
+        left: calc(50% - 20px)
+        animation-delay: .1s
+    .blurred-olive
+        top: 730px
+        left: calc(50% - 20px)
+        animation-delay: .2s
+    .cucumber2
+        top: 600px
+        left: calc(50% + 100px)
+        animation-delay: .6s
+    .salad4
+        top: 600px
+        left: calc(50% - 190px)
+        animation-delay: .35s
+    .pear
+        top: 650px
+        left: calc(50% + 10px)
+        animation-delay: .8s
+    .pear1
+        top: 650px
+        left: calc(50% - 230px)
+        animation-delay: .55s
+    .carrot2
+        top: 670px
+        left: calc(50% - 240px)
+        animation-delay: .4s
+    .banana
+        top: 610px
+        left: calc(50% - 110px)
+        animation-delay: .9s
+    .bread
+        top: 510px
+        left: calc(50% - 190px)
+        animation-delay: .8s
+    .olive
+        top: 650px
+        left: calc(50% - 130px)
+        animation-delay: .7s
+    .salad3
+        top: 560px
+        left: calc(50% - 60px)
+        animation-delay: .6s
+    .carrot
+        top: 450px
+        left: calc(50% - 190px)
+        animation-delay: .2s
+    .pepper
+        top: 430px
+        left: calc(50% + 30px)
+        animation-delay: .3s
+    .salad2
+        top: 570px
+        left: calc(50% - 120px)
+    .onion
+        top: 470px
+        left: calc(50% + 140px)
+        animation-delay: .1s
+    .libero
+        top: 530px
+        left: calc(50% + 0px)
+        animation-delay: .9s
+    .apple
+        top: 720px
+        left: calc(50% - 60px)
+        animation-delay: .9s
+    .cucumber
+        top: 640px
+        left: calc(50% + 160px)
+        animation-delay: .8s
+    .potato
+        top: 690px
+        left: calc(50% + 10px)
+    .salad1
+        top: 530px
+        left: calc(50% - 110px)
+        animation-delay: .3s
+    .zewa2
+        top: 490px
+        left: calc(50% - 400px)
+        animation-delay: .45s
+    .beet
+        top: 390px
+        left: calc(50% - 340px)
+        animation-delay: .7s
+    .eggplant
+        top: 480px
+        left: calc(50% - 320px)
+        animation-delay: .4s
+    .zewa1
+        top: 590px
+        left: calc(50% - 320px)
+        animation-delay: 1s
+    .nutrilon2
+        top: 590px
+        left: calc(50% - 80px)
+    .tomato2
+        top: 670px
+        left: calc(50% + 60px)
+        animation-delay: .1s
+    .tomato1
+        top: 670px
+        left: calc(50% + 40px)
+        animation-delay: .2s
+    .nutrilon1
+        top: 550px
+        left: calc(50% - 190px)
+        animation-delay: .5s
+    .orange
+        top: 762px
+        left: calc(50% - 260px)
+        animation-delay: .6s
+    .milk
+        top: 720px
+        left: calc(50% - 230px)
+        animation-delay: .4s
+    .pluses
+        opacity: 0
+        transition: opacity 2s
+    .popup
+        display: block
+        font-size: 14px
+        color: #ffffff
+        background: #005826
+        border-radius: 5px
+        padding: 8px 12px
+        pointer-events: none
+        position: relative
+        opacity: 0
+        transition: opacity .5s
+        &:before
+            content: ''
+            position: absolute
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 6px 6px 6px
+            border-color: transparent transparent #005826 transparent
+            top: -6px
+            left: calc(50% - 6px)
+    .plus
+        position: absolute
+        z-index: 1
+        a:hover+.popup
+            opacity: 1
+    .plus:first-child
+        top: 420px
+        left: calc(50% - 395px)
+    .plus:nth-child(2)
+        top: 560px
+        left: calc(50% - 460px)
+    .plus:nth-child(3)
+        top: 500px
+        left: calc(50% - 260px)
+    .plus:nth-child(4)
+        top: 490px
+        left: calc(50% - 110px)
+    .plus:nth-child(5)
+        top: 430px
+        left: calc(50% + 60px)
+    .plus:nth-child(6)
+        top: 570px
+        left: calc(50% + 30px)
+    .plus:nth-child(7)
+        top: 470px
+        left: calc(50% + 160px)
+    .plus:nth-child(8)
+        top: 590px
+        left: calc(50% + 250px)
+    .plus:nth-child(9)
+        top: 750px
+        left: calc(50% - 170px)
+    @media (max-width: 1200px)
+        padding: 60px 0 220px
+        .logo
+            width: 163px
+        h1
+            font-size: 33px
+            margin: 15px 0 5px
+        .under
+            font-size: 19px
+            margin-top: 0
+        .bag
+            max-width: 326px
+            left: calc(50% - 163px)
+        .products
+            transform: scale(.5)
+            *
+                transform: translateY(-1800px)
+                animation: drop1200 1s linear forwards
+        .blurred-carrot
+            top: 671px
+            left: calc(50% - 140px)
+            animation-delay: .7s
+        .blurred-pear, .blurred-eggplant, .cucumber2, .salad3, .orange
+            animation-delay: .6s
+        .blurred-popato2, .banana, .libero, .apple
+            animation-delay: .9s
+        .steak, .pear, .cucumber, .bread
+            animation-delay: .8s
+        .salmon, .beet, .olive
+            animation-delay: .7s
+        .blurred-potato, .nutrilon1
+            animation-delay: .5s
+        .nutrilon1
+            top: 556px
+            left: calc(50% - 220px)
+        .blurred-orange, .onion, .tomato2
+            animation-delay: .1s
+        .blurred-olive, .carrot, .tomato1
+            animation-delay: .2s
+        .salad4
+            animation-delay: .35s
+        .pear1
+            animation-delay: .55s
+        .carrot2, .milk
+            animation-delay: .4s
+        .pepper, .salad1
+            animation-delay: .3s
+        .zewa2
+            animation-delay: .45s
+        .eggplant
+            animation-delay: .4s
+        .zewa1
+            animation-delay: 1s
+        .pluses
+            transform: scale(.5) translateY(-420px)
+    @media (max-width: 730px)
+        overflow: hidden
+        padding: 30px 0 210px
+        h1
+            font-size: 24px
+        .under
+            font-size: 14px
+        .button
+            margin-top: 15px
+        .bag
+            width: 264px
+            left: calc(50% - 132px)
+        .products
+            transform: scale(.4)
+            *
+                transform: translateY(-1800px)
+                animation: drop730 1s linear forwards
+        .pluses
+            transform: scale(.4) translateY(-360px)
+        .blurred-carrot
+            top: 671px
+            left: calc(50% - 140px)
+            animation-delay: .7s
+        .blurred-pear, .blurred-eggplant, .cucumber2, .salad3, .orange
+            animation-delay: .6s
+        .blurred-popato2, .banana, .libero, .apple
+            animation-delay: .9s
+        .steak, .pear, .cucumber, .bread
+            animation-delay: .8s
+        .salmon, .beet, .olive
+            animation-delay: .7s
+        .blurred-potato, .nutrilon1
+            animation-delay: .5s
+        .nutrilon1
+            top: 560px
+            left: calc(50% - 220px)
+        .blurred-orange, .onion, .tomato2
+            animation-delay: .1s
+        .blurred-olive, .carrot, .tomato1
+            animation-delay: .2s
+        .salad4
+            animation-delay: .35s
+        .pear1
+            animation-delay: .55s
+        .carrot2, .milk
+            animation-delay: .4s
+        .pepper, .salad1
+            animation-delay: .3s
+        .zewa2
+            animation-delay: .45s
+        .eggplant
+            animation-delay: .4s
+        .zewa1
+            animation-delay: 1s
+@keyframes drop
+    100%
+        transform: translateY(0)
+@keyframes drop1200
+    100%
+        transform: translateY(-430px)
+@keyframes drop730
+    100%
+        transform: translateY(-350px)

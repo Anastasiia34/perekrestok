@@ -1,0 +1,62 @@
+.#{$prefix}-how-it-works
+    padding: 40px 0 70px
+    background: #ffffff
+    .brands
+        width: 604px
+        height: 112px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border: 1px dashed #CBE07D
+        box-shadow: 0px 10px 10px rgba(203, 224, 125, 0.25)
+        border-radius: 10px
+        margin: 0 auto 80px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            width: 17px
+            height: 17px
+            background: #ffffff
+            transform: rotate(45deg)
+            border-top: 1px dashed #CBE07D
+            border-left: 1px dashed #CBE07D
+            top: -9px
+    h3
+        margin: 25px 0 35px
+    p
+        max-width: 930px
+        margin: 0 auto
+        line-height: 1.5
+    .green-link
+        color: $green
+        margin-top: 30px
+        text-decoration: underline
+        display: block
+    @media (max-width: 1200px)
+        .brands
+            width: 426px
+            height: 88px  
+            margin-bottom: 50px
+            img
+                transform: scale(0.8) 
+        .icon
+            width: 100px
+        h3
+            margin: 25px 0 20px
+        p
+            max-width: 665px
+    @media (max-width: 730px)
+        padding: 25px 0 50px
+        .brands
+            width: 288px
+            height: 53px
+            margin-bottom: 35px
+            img
+                transform: scale(0.5) 
+        .icon
+            width: 86px
+        h3
+            margin: 15px 0
+        .green-link
+            margin-top: 10px

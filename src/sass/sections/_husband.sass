@@ -1,0 +1,66 @@
+.#{$prefix}-husband
+    padding-bottom: 100px
+    h3
+        margin: 15px 0 50px
+    .owl-carousel
+        max-width: 1000px
+        margin: 0 auto
+    .owl-prev, .owl-next
+        position: absolute
+        top: 115px
+        &.disabled
+            opacity: 0.5
+    .owl-prev
+        left: -60px
+    .owl-next
+        right: -60px
+    .item   
+        margin: 0 auto 20px
+        width: 280px
+        height: 280px
+        box-sizing: border-box
+        padding: 30px 32px 40px
+        background: #ffffff
+        box-shadow: 0px 10px 30px rgba(200, 200, 200, 0.4)
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    .img-wrapper
+        height: 130px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            max-width: 140px
+            max-height: 100%    
+            width: auto!important
+    @media (max-width: 1200px)
+        padding-bottom: 80px
+        .husband
+            width: 100px
+            height: 100px
+        .item
+            width: 247px
+            height: 247px
+        .owl-carousel
+            max-width: 650px
+        .owl-prev, .owl-next
+            top: 85px
+        .owl-prev
+            left: -20px
+        .owl-next
+            right: -20px
+    @media (max-width: 730px)
+        padding-bottom: 40px
+        .item
+            width: 180px
+            height: 180px
+            margin-bottom: 30px
+        .owl-prev, .owl-next
+            top: 45px
+        .owl-prev
+            left: 0
+        .owl-next
+            right: 0
+        

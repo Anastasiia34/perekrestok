@@ -1,0 +1,116 @@
+.#{$prefix}-stories
+    background: #ffffff
+    padding-bottom: 20px
+    position: relative
+    .item
+        position: absolute
+        text-align: left
+    .name
+        font-family: 'Rotonda Bold', sans-serif
+        font-size: 16px
+        color: $d-green
+        margin-bottom: 10px
+    .title
+        font-family: 'Rotonda Bold', sans-serif
+    .video-img
+        width: 300px
+        height: 158px
+        max-width: none
+        object-fit: cover
+        position: absolute
+        cursor: pointer
+    #item1
+        color: #FFBA34
+        width: 180px
+        text-align: right
+        top: 190px
+        left: calc(50% - 600px)
+        .video-img
+            left: 40px
+            bottom: -170px
+    #item2
+        color: #72BF44
+        width: 260px
+        top: 290px
+        left: calc(50% + 30px)
+        .video-img
+            left: -180px
+            bottom: -210px
+            z-index: 1
+    #item3
+        color: #D370B6
+        width: 202px
+        top: 170px
+        right: calc(50% - 610px)
+        .video-img
+            left: -120px
+            bottom: -220px
+    .curve
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: -45px
+    @media (max-width: 1200px)
+        font-size: 15px
+        .name
+            font-size: 10px
+        .video-img
+            width: 177px
+            height: 93px
+        #item1
+            width: 109px
+            top: 110px
+            left: calc(50% - 360px)
+            .video-img
+                bottom: -100px
+        #item2
+            width: 155px
+            top: 190px
+            left: calc(50% + 10px)
+            .video-img
+                left: -100px
+                bottom: -110px
+        #item3
+            width: 120px
+            top: 110px
+            right: calc(50% - 360px)
+            .video-img
+                left: -70px
+                bottom: -120px
+        .curve
+            bottom: -25px
+    @media (max-width: 730px)
+        padding: 0 0 1050px
+        background: #ffffff url(#{$pic-path}/moms730.png) no-repeat calc(50% + 20px) 100%
+        h2
+            margin-bottom: 15px
+        .moms
+            display: none
+        .video-img
+            width: 290px
+            height: 152px
+            z-index: 1
+        #item1
+            width: 124px
+            top: 150px
+            left: calc(50% - 140px)
+            .video-img
+                bottom: -170px
+                left: -5px
+        #item2
+            width: 144px
+            top: 530px
+            left: calc(50% + 20px)
+            .video-img
+                left: -165px
+                bottom: -170px
+        #item3
+            width: 135px
+            top: 910px
+            right: calc(50% + 10px)
+            text-align: right
+            .video-img
+                left: 2px
+                bottom: -160px
+        .curve
+            bottom: -15px

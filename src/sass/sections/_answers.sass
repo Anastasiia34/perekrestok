@@ -1,0 +1,56 @@
+.#{$prefix}-answers
+    padding: 15px 0 20px
+    .flex-wrapper
+        max-width: 860px
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .item
+        margin-top: 40px
+        width: 239px
+    .ava
+        display: block
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        margin: 0 auto
+    .name
+        font-size: 13px
+        text-decoration: underline
+        color: #9E9E9E
+        margin: 10px 0
+        display: block
+    .answer
+        line-height: 1.3
+    .pagination
+        width: 296px
+        display: flex
+        margin: 55px auto 0
+        justify-content: space-between
+        a
+            color: $green
+            &.active
+                color: #ffffff
+                position: relative
+                z-index: 1
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 39px
+                    height: 39px
+                    background: $green
+                    border-radius: 50%
+                    z-index: -1
+                    left: calc(50% - 19px)
+                    top: -9px
+    @media (max-width: 1200px)
+        .item
+            width: 200px
+    @media (max-width: 730px)
+        .flex-wrapper
+            justify-content: center
+        .item
+            width: 240px
+        .answer
+            font-size: 24px

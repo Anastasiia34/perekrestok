@@ -1,0 +1,17 @@
+.#{$prefix} {
+    &-container{
+        margin: 0 auto;
+        box-sizing: border-box;
+        max-width: 1200px;
+        @media (max-width: 1200px){
+            max-width: 700px;
+        }
+        @media (max-width: 730px){
+            max-width: 290px;
+        }
+//		@include media-xs-sm {max-width: 320px;}
+//		@include media-sm-md {max-width: 580px;}
+//		@include media-md-lg {max-width: 960px;}
+    }
+
+}
